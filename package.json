@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cd cordova-app && cordova build android",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.1.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-cordova": "^0.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
